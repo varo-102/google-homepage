@@ -14,7 +14,7 @@ html {
 }
 a {
     text-decoration: none;
-    color: rgb(20, 20, 20);
+    color: rgb(54, 54, 54);
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -67,37 +67,83 @@ a {
 }
 #search-form {
     grid-area: search-form;
-    width: 400px;
-    height: 20px;
+    width: 520px;
+    height: 30px;
     padding: 5px 0px 5px 0px;
     justify-self: center;
     align-self: center;
+    border-radius: 22px;
+    border-color: rgba(54, 54, 54, 0.171);
+    border-width: 1px;
+}
+#search-form:hover {
+    box-shadow: 0px 0px 4px #7e7e7e91;
 }
 #search {
     grid-area: search;
-    padding: 25px 0px 10px 0px;
+    padding: 20px 5px 10px 0px;
     justify-self: center;
     align-self: center;
+    font-size: 16px;
 
+
+}
+.boton {
+    padding: 8px 21px 8px 21px;
+    justify-self: center;
+    align-self: center;
+    font-size: 15px;
+    color: rgba(48, 48, 48, 0.747);
+    border: rgb(51, 51, 51);
+    border-radius: 4px;
+}
+.boton:hover {
+    color: black;
+    border: black;
+    border-color: black;
+    border-width: 1px;
 }
 footer {
 }
 #google-text {
     grid-area: google-text;
-    padding: 5px 0px 5px 0px;
+    padding: 0px 0px 5px 0px;
     justify-self: center;
     align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
 #footer-google {
-    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     bottom: 0px;
-    display: grid;
-    grid-template-columns: 70px 70px 130px 1fr 60px 60px 60px;
-    grid-template-rows: 50px;
-    grid-template-areas:
-    " adbertising business how-to . privacy termns settings";
-
+    left: 0px;
+    position: fixed;
+    padding-bottom: 3px;
+    background-color: rgba(218, 218, 218, 0.356);
+    box-sizing: border-box;
 }
+#left-footer {
+    display: grid;
+    grid-template-columns: 90px 90px 120px;
+    grid-template-rows: 35px;
+    grid-template-areas: 
+    "adbertising business how-to";
+    padding-left: 0px;
+    color: rgb(53, 53, 53);
+    box-sizing: border-box;
+}
+#right-footer {
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+    grid-template-rows: 35px;
+    grid-template-areas: 
+    "privacy termns settings";
+    padding-right: 15px;
+    color: rgb(53, 53, 53);
+    box-sizing: border-box;
+}    
 #adbertising {
     grid-area: adbertising;
     justify-self: center;
@@ -127,4 +173,25 @@ footer {
     grid-area: settings;
     justify-self: center;
     align-self: center;
+}
+#random-search-btn {
+    align-content: center;
+    padding: 8px 15px 10px 5px;
+    border: rgb(12, 11, 10);
+    border-radius: 5%;
+    width: 150px;
+    height: 30px;
+    color: rgb(39, 45, 48);
+}
+#google-search-btn {
+    align-content: center;
+    padding: 8px 10px 10px 15px;
+    border: rgb(36, 33, 30);
+    border-radius: 5%;
+    width: 150px;
+    height: 30px;
+    color: rgb(39, 45, 48);
+}
+#latino {
+    color: rgba(28, 28, 121, 0.89);
 }
